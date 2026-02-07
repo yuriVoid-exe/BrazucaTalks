@@ -27,21 +27,40 @@
   </p>
 </div>
 
-
+---
 
 ## 💡 About the Project
 
-BrazucaTalks is a high-performance reference implementation of the Frugal AI Ecosystem theoretical framework, recently proposed by the Cambridge Judge Business School (Nov 2025).
-While the current AI paradigm remains tethered to multi-billion dollar data centers and unsustainable energy footprints, BrazucaTalks proves that a sophisticated, multimodal, and context-aware AI can thrive on commodity hardware. Developed on a standard Intel Core i3 with 8GB of RAM, this project serves as a bridge between high-level AI research and practical, democratic accessibility in the Global South.
-🎯 The Core Challenge
-State-of-the-Art (SOTA) Large Language Models (LLMs) often suffer from high latency and prohibitive operational costs. In a distributed systems context, these bottlenecks prevent the scaling of personalized education. BrazucaTalks solves the "AI Trilemma" (Cost, Latency, and Context) through a distributed modular architecture.
-🚀 Key Innovations
-Semantic Short-Circuiting: By implementing a Semantic Cache Layer using vector similarity search in Redis Stack, the system bypasses heavy neural inference for recurring queries, reducing response latency from ~100s to 0.08s (a 1250x performance boost).
-Hybrid Intent Routing: A custom Semantic Router employs a heuristic-neural hybrid approach (Cosine Similarity + Weighted Keyword Boosting) to classify user intents in milliseconds, ensuring that expensive RAG pipelines are only activated when technically necessary.
-Distributed Statelessness: The backend is strictly stateless, delegating session management and conversation history to an external Redis instance. This architectural choice enables seamless horizontal scaling and high availability.
-Multimodal Edge Intelligence: Integration of quantized SLMs (Small Language Models), int8-quantized STT (Faster-Whisper), and Real-time Lip-Sync via Web Audio API, providing a human-like tutoring experience without any reliance on paid cloud APIs.
-🌍 Impact & Relevance
-This project demonstrates that Data Sovereignty and Privacy-First AI are achievable for public institutions and schools with limited resources. It stands as a testament to Frugal Engineering: the art of delivering "State-of-the-Art" results through architectural precision rather than brute-force hardware.
+<div align="justify">
+  <strong>BrazucaTalks</strong> is a high-performance reference implementation of the <strong>Frugal AI Ecosystem</strong> theoretical framework, recently proposed by the <strong>Cambridge Judge Business School (Nov 2025)</strong>. 
+</div>
+
+<br />
+
+<div align="justify">
+  While the current AI paradigm remains tethered to multi-billion dollar data centers and unsustainable energy footprints, <strong>BrazucaTalks</strong> proves that a sophisticated, multimodal, and context-aware AI can thrive on commodity hardware. Developed on a standard <strong>Intel Core i3 with 8GB of RAM</strong>, this project serves as a bridge between high-level AI research and practical, democratic accessibility in the Global South.
+</div>
+
+### 🎯 The Core Challenge
+
+<div align="justify">
+  State-of-the-Art (SOTA) Large Language Models (LLMs) often suffer from high latency and prohibitive operational costs. In a distributed systems context, these bottlenecks prevent the scaling of personalized education. <strong>BrazucaTalks</strong> solves the <i>"AI Trilemma"</i> (Cost, Latency, and Context) through a distributed modular architecture.
+</div>
+
+### 🚀 Key Innovations
+
+*   **Semantic Short-Circuiting:** By implementing a **Semantic Cache Layer** using vector similarity search in Redis Stack, the system bypasses heavy neural inference for recurring queries, reducing response latency from **~100s to 0.08s** (a 1250x performance boost).
+*   **Hybrid Intent Routing:** A custom **Semantic Router** employs a heuristic-neural hybrid approach (Cosine Similarity + Weighted Keyword Boosting) to classify user intents in milliseconds, ensuring that expensive RAG pipelines are only activated when technically necessary.
+*   **Distributed Statelessness:** The backend is strictly **stateless**, delegating session management and conversation history to an external **Redis** instance. This architectural choice enables seamless horizontal scaling and high availability.
+*   **Multimodal Edge Intelligence:** Integration of **quantized SLMs** (Small Language Models), **int8-quantized STT** (Faster-Whisper), and **Real-time Lip-Sync** via Web Audio API, providing a human-like tutoring experience without any reliance on paid cloud APIs.
+
+### 🌍 Impact & Relevance
+
+<div align="justify">
+  This project demonstrates that <strong>Data Sovereignty</strong> and <strong>Privacy-First AI</strong> are achievable for public institutions and schools with limited resources. It stands as a testament to <strong>Frugal Engineering</strong>: the art of delivering "State-of-the-Art" results through architectural precision rather than brute-force hardware.
+</div>
+
+---
 
 
 ## 🏛️ SOTA Architecture
@@ -171,6 +190,7 @@ npm run dev
 ---
 
 > *This project was developed as a reference implementation for the Cambridge Frugal AI white paper.*
+
 
 
 
