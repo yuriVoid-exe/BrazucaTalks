@@ -72,70 +72,87 @@ graph TD
 ```
 
 ## Engineering Highlights:
-- Semantic Caching: Utilizes Vector Search (Cosine Similarity) to identify recurring intents and provide instant  responses, bypassing heavy LLM inference.
-- Hybrid RAG: Integrated pedagogical knowledge retrieval via PDF/JSON using HNSW indexing in Redis Stack.
-- Linguistic Sovereignty: Advanced prompt engineering that enforces language policy and prevents persona leaking.
+- **Semantic Caching:** Utilizes Vector Search (Cosine Similarity) to identify recurring intents and provide instant  responses, bypassing heavy LLM inference.
+- **Hybrid RAG:** Integrated pedagogical knowledge retrieval via PDF/JSON using HNSW indexing in Redis Stack.
+- **Linguistic Sovereignty:** Advanced prompt engineering that enforces language policy and prevents persona leaking.
+
+---
 
 ## 🛠️ Tech Stack
+
 <div align="center">
-  Category	Technologies
-  Backend	
-  ![alt text](https://img.shields.io/badge/Python_3.11-3776AB?style=flat&logo=python&logoColor=white)
-  ![alt text](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-  ![alt text](https://img.shields.io/badge/uv-Manager-purple?style=flat)
-  Frontend	
-  ![alt text](https://img.shields.io/badge/React_19-20232A?style=flat&logo=react&logoColor=61DAFB)
-  ![alt text](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
-  ![alt text](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
-  AI & Data	
-  ![alt text](https://img.shields.io/badge/Ollama-Local_AI-black?style=flat)
-  ![alt text](https://img.shields.io/badge/Redis_Stack-DC382D?style=flat&logo=redis&logoColor=white)
-  ![alt text](https://img.shields.io/badge/Three.js-Avatar-black?style=flat&logo=three.js&logoColor=white)
+
+| Category | Technologies |
+| :--- | :--- |
+| **Backend** | ![Python](https://img.shields.io/badge/Python_3.11-3776AB?style=flat&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![uv](https://img.shields.io/badge/uv-Manager-purple?style=flat) |
+| **Frontend** | ![React](https://img.shields.io/badge/React_19-20232A?style=flat&logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_v4-38B2AC?style=flat&logo=tailwind-css&logoColor=white) |
+| **AI & Data** | ![Ollama](https://img.shields.io/badge/Ollama-Local_AI-black?style=flat) ![Redis](https://img.shields.io/badge/Redis_Stack-DC382D?style=flat&logo=redis&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-Avatar-black?style=flat&logo=three.js&logoColor=white) |
+
 </div>
 
+---
+
 ## 📊 Performance Benchmarks
-Real-world metrics captured on a consumer laptop (Dell Inspiron, i3-1215U, 8GB RAM):
-Metric	Result	Impact
-Cache Miss (Generation)	~60.0s	Heavy Neural Processing (LLM).
-Cache Hit (Semantic)	0.08s	850x faster. Zero CPU cost.
-Intent Detection	0.01s	Mathematical Router (Linear Algebra).
-Memory Footprint	Stable	No OOM Killer (Quantization & ZRAM).
-🚀 Getting Started
-Prerequisites
-Docker & Docker Compose
-Ollama (with qwen2.5:1.5b and nomic-embed-text models)
-Python 3.11+ (Recommended: uv)
-Node.js 20+
+
+Real-world metrics captured on a consumer laptop (**Dell Inspiron, i3-1215U, 8GB RAM**):
+
+| Metric | Result | Impact |
+| :--- | :--- | :--- |
+| **Cache Miss (Generation)** | ~60.0s | Heavy Neural Processing (LLM). |
+| **Cache Hit (Semantic)** | **0.08s** | **850x faster.** Zero CPU cost. |
+| **Intent Detection** | 0.01s | Mathematical Router (Linear Algebra). |
+| **Memory Footprint** | Stable | No OOM Killer (Quantization & ZRAM). |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+*   **Docker & Docker Compose**
+*   **Ollama** (with `qwen2.5:1.5b` and `nomic-embed-text` models)
+*   **Python 3.11+** (Recommended: [uv](https://github.com/astral-sh/uv))
+*   **Node.js 20+**
+
 
 ## Setup Instructions
+
 <details>
 <summary><b>1. Infrastructure Setup</b> (Click to expand)</summary>
-code
-Bash
+
+
+```Bash
 # Start the Vector Database
 docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 
 # Pull AI Models
 ollama pull qwen2.5:1.5b
 ollama pull nomic-embed-text
+```
+
 </details>
+
 <details>
 <summary><b>2. Backend Initialization</b> (Click to expand)</summary>
-code
-Bash
+
+```Bash
 # In the project root
 uv sync
 uv run python -m src.app.rag.ingest_data  # Load knowledge base
 PYTHONPATH=src uv run uvicorn app.main:app --reload
+```
+
 </details>
+
 <details>
 <summary><b>3. Frontend Initialization</b> (Click to expand)</summary>
-code
-Bash
+
+```Bash
 cd frontend
 npm install
 npm run dev
+```
 </details>
+
 👨‍💻 Author
 <div align="center">
 Yuri Matheus
@@ -146,6 +163,7 @@ IFNMG - Federal Institute of Northern Minas Gerais
 ![alt text](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)
 </div>
 This project was developed as a reference implementation for the Cambridge Frugal AI white paper.
+
 
 
 
