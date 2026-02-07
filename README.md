@@ -69,7 +69,7 @@ graph TD
         
         Orchestrator --> Memory
     end
-
+```
 Engineering Highlights:
 Semantic Caching: Utilizes Vector Search (Cosine Similarity) to identify recurring intents and provide instant responses, bypassing heavy LLM inference.
 Hybrid RAG: Integrated pedagogical knowledge retrieval via PDF/JSON using HNSW indexing in Redis Stack.
@@ -142,5 +142,6 @@ IFNMG - Federal Institute of Northern Minas Gerais
 ![alt text](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)
 </div>
 This project was developed as a reference implementation for the Cambridge Frugal AI white paper.
+
 
 
