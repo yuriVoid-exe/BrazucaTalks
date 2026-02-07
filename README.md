@@ -153,16 +153,24 @@ npm run dev
 ```
 </details>
 
-👨‍💻 Author
-<div align="center">
-Yuri Matheus
-Undergraduate Researcher & Software Architect
-IFNMG - Federal Institute of Northern Minas Gerais
-![alt text](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)
+---
 
-![alt text](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)
+## 👨‍💻 Author
+
+<div align="center">
+
+### Yuri Matheus
+**Undergraduate Researcher & Software Architect**  
+*IFNMG - Federal Institute of Northern Minas Gerais*
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/yurisousa-dev)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:yure.matheuskyan2011@gmail.com)
+
 </div>
-This project was developed as a reference implementation for the Cambridge Frugal AI white paper.
+
+---
+
+> *This project was developed as a reference implementation for the Cambridge Frugal AI white paper.*
 
 
 
