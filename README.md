@@ -27,7 +27,7 @@
   </p>
 </div>
 
----
+
 
 ## 💡 About the Project
 
@@ -42,7 +42,7 @@ Distributed Statelessness: The backend is strictly stateless, delegating session
 Multimodal Edge Intelligence: Integration of quantized SLMs (Small Language Models), int8-quantized STT (Faster-Whisper), and Real-time Lip-Sync via Web Audio API, providing a human-like tutoring experience without any reliance on paid cloud APIs.
 🌍 Impact & Relevance
 This project demonstrates that Data Sovereignty and Privacy-First AI are achievable for public institutions and schools with limited resources. It stands as a testament to Frugal Engineering: the art of delivering "State-of-the-Art" results through architectural precision rather than brute-force hardware.
----
+
 
 ## 🏛️ SOTA Architecture
 
@@ -141,3 +141,4 @@ IFNMG - Federal Institute of Northern Minas Gerais
 ![alt text](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)
 </div>
 This project was developed as a reference implementation for the Cambridge Frugal AI white paper.
+
