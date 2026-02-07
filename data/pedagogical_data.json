@@ -1,0 +1,17 @@
+[
+  {
+    "topic": "Grammar: Make vs Do",
+    "content": "Diferença entre Make e Do para brasileiros: 'Make' geralmente foca no resultado ou criação (ex: Make a cake, make a decision). 'Do' foca na ação, trabalho ou tarefas (ex: Do homework, do exercise). Erro comum: brasileiros dizem 'make exercise' quando o correto é 'do exercise'.",
+    "metadata": {"category": "grammar", "level": "beginner", "common_error": "L1 interference"}
+  },
+  {
+    "topic": "Grammar: Present Perfect",
+    "content": "O Present Perfect (Have + Participle) conecta o passado ao presente. Use quando a data não importa (I have traveled to Italy) ou quando a ação continua (I have lived here for 2 years). Erro comum: brasileiros usam o Simple Past para ações que ainda continuam.",
+    "metadata": {"category": "grammar", "level": "intermediate", "tense": "present_perfect"}
+  },
+  {
+    "topic": "Vocabulary: False Cognates",
+    "content": "Falsos Cognatos Críticos: 'Pretend' NÃO é pretender, é FINGIR. 'Intend' é PRETENDER. Exemplo: 'I intend to study' (Eu pretendo estudar). 'She pretends to be sleeping' (Ela finge estar dormindo). Outro: 'Actually' significa 'Na verdade', não 'Atualmente'.",
+    "metadata": {"category": "vocabulary", "level": "all", "type": "false_cognates"}
+  }
+]

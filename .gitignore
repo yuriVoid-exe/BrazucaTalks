@@ -1,0 +1,40 @@
+# --- Python & UV ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.python-version
+build/
+dist/
+*.egg-info/
+.coverage
+.pytest_cache/
+
+# --- Node.js / Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# --- Variáveis de Ambiente & Segredos (CRÍTICO) ---
+.env
+.env.*
+!.env.example
+
+# --- Dados do Projeto ---
+# Ignorar áudios gerados (não queremos subir MP3s de teste)
+static/audio/*
+!static/audio/.gitkeep
+
+# Ignorar banco de dados local do Redis (se houver dump)
+dump.rdb
+appendonly.aof
+
+# --- IDEs e Sistema ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

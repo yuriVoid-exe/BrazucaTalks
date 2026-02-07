@@ -1,0 +1,28 @@
+[project]
+name = "brazuka-talks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "arq>=0.26.3",
+    "docling>=2.70.0",
+    "edge-tts>=7.2.7",
+    "fastapi>=0.128.0",
+    "faster-whisper>=1.2.1",
+    "httpx>=0.28.1",
+    "numpy>=2.4.1",
+    "ollama>=0.6.1",
+    "orjson>=3.11.6",
+    "pydantic-settings>=2.12.0",
+    "pymupdf4llm>=0.2.9",
+    "python-dotenv>=1.2.1",
+    "python-multipart>=0.0.22",
+    "redis>=5.3.1",
+    "requests>=2.32.5",
+    "structlog>=25.5.0",
+    "tenacity>=9.1.2",
+    "uuid6>=2025.0.1",
+    "uvicorn[standard]>=0.40.0",
+    "uvloop>=0.22.1",
+]
